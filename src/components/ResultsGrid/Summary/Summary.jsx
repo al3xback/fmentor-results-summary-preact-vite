@@ -2,13 +2,13 @@ import styles from './Summary.module.css';
 
 export default function Summary({ scores }) {
 	return (
-		<div className={styles.summary}>
-			<h2 className={styles.title}>Summary</h2>
-			<ul className={styles.list}>
+		<div class={styles.summary}>
+			<h2 class={styles.title}>Summary</h2>
+			<ul class={styles.list}>
 				{scores.map((score) => (
 					<li
 						key={score.id}
-						className={`${styles.item} ${
+						class={`${styles.item} ${
 							styles[`item-${score.id}`]
 						}`}
 					>
@@ -21,7 +21,7 @@ export default function Summary({ scores }) {
 					</li>
 				))}
 			</ul>
-			<button type='button' className='btn btn--primary btn--full'>
+			<button type='button' class='btn btn--primary btn--full'>
 				Continue
 			</button>
 		</div>

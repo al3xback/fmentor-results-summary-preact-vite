@@ -7,7 +7,7 @@ export default function ResultGrid() {
 	const mean = getMeanScore();
 
 	return (
-		<div className={styles['results-grid']}>
+		<div class={styles['results-grid']}>
 			<Result mean={mean} />
 			<Summary scores={SCORES} />
 		</div>
